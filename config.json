@@ -1,0 +1,163 @@
+{
+    "FAUXMO": {
+        "ip_address": "auto"
+    },
+    "DEVICES": [
+	{
+	    "port": 12345,
+	    "handler": {
+		"on_cmd": "http://localhost:5001/plugthree/on",
+		"off_cmd": "http://localhost:5001/plugthree/off",
+		"method": "GET"
+	    },
+	    "description": "Globe Lamp"
+	},
+        {
+            "port": 12346,
+            "handler": {
+                "on_cmd": "http://localhost:5001/plugtwo/on",
+                "off_cmd": "http://localhost:5001/plugtwo/off",
+                "method": "GET"
+            },
+            "description": "Bedside Lamp"
+        },
+        {
+            "port": 12347,
+            "handler": {
+                "on_cmd": "http://localhost:5001/plugfour/on",
+                "off_cmd": "http://localhost:5001/plugfour/off",
+                "method": "GET"
+            },
+            "description": "Desk Lamp"
+        },
+        {
+            "port": 12348,
+            "handler": {
+                "on_cmd": "http://leds:5000/fade?to=255 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://leds:5000/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Red LEDs (Bed)"
+	},
+        {
+            "port": 12349,
+            "handler": {
+                "on_cmd": "http://leds:5000/fade?to=0 255 0&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://leds:5000/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Green LEDs (Bed)"
+        },
+        {
+            "port": 12350,
+            "handler": {
+                "on_cmd": "http://leds:5000/fade?to=0 0 255&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://leds:5000/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Blue LEDs (Bed)"
+        },
+        {
+            "port": 12351,
+            "handler": {
+                "on_cmd": "http://leds:5000/fade?to=255 255 255&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://leds:5000/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "White LEDs (Bed)"
+        },
+        {
+            "port": 12352,
+            "handler": {
+                "on_cmd": "http://leds:5000/fade?to=255 255 0&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://leds:5000/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Yellow LEDs (Bed)"
+        },
+        {
+            "port": 12353,
+            "handler": {
+                "on_cmd": "http://leds:5000/fade?to=0 255 255&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://leds:5000/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Aqua LEDs (Bed)"
+        },
+
+
+
+        {
+            "port": 12354,
+            "handler": {
+                "on_cmd": "http://raspberrypi:5002/fade?to=255 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://raspberrypi:5002/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Red LEDs (desk)"
+	},
+        {
+            "port": 12355,
+            "handler": {
+                "on_cmd": "http://raspberrypi:5002/fade?to=0 255 0&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://raspberrypi:5002/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Green LEDs (desk)"
+        },
+        {
+            "port": 12356,
+            "handler": {
+                "on_cmd": "http://raspberrypi:5002/fade?to=0 0 255&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://raspberrypi:5002/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Blue LEDs (desk)"
+        },
+        {
+            "port": 12357,
+            "handler": {
+                "on_cmd": "http://raspberrypi:5002/fade?to=255 255 255&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://raspberrypi:5002/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "White LEDs (desk)"
+        },
+        {
+            "port": 12358,
+            "handler": {
+                "on_cmd": "http://raspberrypi:5002/fade?to=255 255 0&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://raspberrypi:5002/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Yellow LEDs (desk)"
+        },
+        {
+            "port": 12359,
+            "handler": {
+                "on_cmd": "http://raspberrypi:5002/fade?to=0 255 255&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://raspberrypi:5002/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Aqua LEDs (desk)"
+        },
+        {
+            "port": 12360,
+            "handler": {
+                "on_cmd": "http://raspberrypi:5002/fade?to=252 135 25&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://raspberrypi:5002/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Warm LEDs (desk)"
+        },
+        {
+            "port": 12361,
+            "handler": {
+                "on_cmd": "http://leds:5000/fade?to=252 135 25&steps=10&seconds=1&pixels=all_pixels",
+                "off_cmd": "http://leds:5000/fade?to=0 0 0&steps=10&seconds=1&pixels=all_pixels",
+                "method": "GET"
+            },
+            "description": "Warm LEDs (bed)"
+        }
+    ]
+}
